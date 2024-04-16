@@ -1,0 +1,256 @@
+/* Write your CSS code here */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8efef;
+    cursor:default;
+}
+
+.form-container {
+    height: 500px;
+    width: 600px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+.login-container,.signup-container {
+    width: 50%;
+    padding: 40px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    transition: all 500ms ease;
+    
+}
+.signup-container{
+  transform:scale(0);
+}
+
+.title{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.desc {
+    font-size: 12px;
+}
+
+.input-container {
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid #d6e0eb;
+    display: flex;
+    align-items: center;
+}
+
+input{
+    height: 100%;
+    border: none;
+    margin-left: 5px;
+    outline: none;
+    font-family: "Roboto", sans-serif;
+}
+
+.account-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.account-controls>a {
+    text-decoration: none;
+    color: #5293aa;
+    font-size: 12px;
+}
+
+.account-controls>button {
+    width: 65px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border: none;
+    background: #046586;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 500ms ease;
+    box-shadow: 0 3px 10px -5px #73aabb;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: #bfc0c9;
+    border-radius: 10px;
+}
+
+.other-login-text {
+    text-align: center;
+    font-size: 12px;
+    color: #64656a;
+}
+
+.placeholder-banner {
+    width: 50%;
+    height: 100%;
+    position:absolute;
+    right:0;
+    transition: all 500ms ease;
+    z-index:4;
+}
+
+.social-logins {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-login {
+
+    height: 40px;
+    aspect-ratio: 1/1;
+    border: 2px solid #bfc0c9;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+    cursor: pointer;
+    transition:transform 500ms ease;
+    &:hover{
+        transform:scale(1.1);
+    }
+}
+.signup-text{
+    margin-top: 5px;
+    font-size: 12px;
+}
+#signup-form-toggler,#login-form-toggler{
+    cursor: pointer;
+    text-decoration: none;
+    color:#046586;
+  &:hover{
+    border-bottom:1px solid;
+  }
+}
+.banner {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+    transition: transform 500ms ease;
+}
+
+
+
+
+
+
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  html {
+    height: 100vh;
+    width: 100%;
+  }
+  
+  // body {
+  //   background: linear-gradient(to bottom right, #14151c, black, #080b1f);
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   justify-items: center;
+  //   height: 100%;
+  //   color: #ededed;
+  // }
+  
+  #container1 {
+    display: flex;
+    width: 500px;
+    height: 25px;
+    background: black;
+    border-radius: 6px;
+    border: 2px solid dimgray;
+    align-items: center;
+    margin: auto;
+  }
+  
+  @keyframes load {
+    from {transform: translate(0, 0)}
+    to {transform: translate(390px, 0)}
+  }
+  
+  #bar {
+    width: 100px;
+    height: 10px;
+    background: linear-gradient(to bottom right, cyan, lightblue);
+    border-radius: 6px;
+    box-shadow: 0 0 10px lightblue;
+    
+    animation: load .25s infinite alternate ease-in-out;
+  }
+  
+  @keyframes dots {
+    from {color: cyan; transform: translate(0, -10%);}
+    to {color: white; transform: translate(0, 0);}
+  }
+  
+  .dot {
+    display: inline-block;
+    font-size: 250%;
+  }
+  
+  .dot:nth-child(1) {
+    animation: dots .5s infinite alternate linear;
+  }
+  
+  .dot:nth-child(2) {
+    animation: dots 1s infinite alternate linear;
+  }
+  
+  .dot:nth-child(3) {
+    animation: dots 1.5s infinite alternate linear;
+  }
+  
+  h1 sub {
+    margin-left: 5%;
+    font-size: 15%;
+    font-weight: normal;
+    
+   
+  }
+  .loading{
+    margin: auto;
+    text-align: center;
+  }
+  .loading-main{
+    margin-top: 130px;
+  }

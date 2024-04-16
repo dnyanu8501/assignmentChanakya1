@@ -1,0 +1,74 @@
+<main *ngIf="!horrorData" class="loading-main">
+  
+  <h1 class="loading">  Loading<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span><sub>infinitely :)</sub></h1>
+ <br>
+  <div id="container1">
+    <div id="bar"></div>
+  </div>
+</main>
+
+
+
+
+
+
+
+
+
+
+<div class="search" *ngIf="horrorData">
+  <input type="search" [(ngModel)]="searchValue" placeholder="Movie Search Here .....">
+</div>
+<div class="main" >
+
+    <div class="movie-card" data-toggle="modal" data-target="#myModal"  *ngFor="let data of horrorData | search :searchValue"   >
+          <div class="poster">
+            <img src={{data.posterURL}} />
+          </div>
+          <div class="details">
+            <h3>{{data.title}}</h3>
+            <div class="tags">
+              <span>Movie</span>
+              <span class="btnBookNow" [routerLink]="['/movies/singleMovie',data.id]">Book Now </span>
+            </div>
+            <div class="description">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
+                quos aliquam perferendis quaerat beatae hic sed porro accusamus et
+                itaque.
+              </p>
+            </div>
+          </div>
+        </div>    
+      </div>
+  
+
+   
+
+      <!-- Modal -->
+      <!-- <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog"> -->
+        
+          <!-- Modal content-->
+          <!-- <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">+91 9500849890 Saravana Kumar Tamilnadu</h4>
+            </div>
+            <div class="modal-body">
+              <p>+91 9500849890 Saravana Kumar Tamilnadu</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div> -->
+<!--           
+        </div>
+      </div> -->
+
+
+      
+      
+      
+    
+    
